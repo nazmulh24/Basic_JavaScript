@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: #879ed6;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.milston-element {
+  background-color: rgb(167, 210, 245);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.milston-header {
+  display: flex;
+  align-items: center;
+  /* text-align: center;
+  margin: 0 auto; */
+}
+
+#curriculum-container {
+  height: 71vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding-right: 10px;
+  box-sizing: content-box;
+}
+
+#curriculum-container::-webkit-scrollbar {
+  width: 12px;
+  background: #f2d6d6;
+  border-radius: 10px;
+}
+
+#curriculum-container::-webkit-scrollbar-thumb {
+  background: #f9bfbf;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+#curriculum-container::-webkit-scrollbar-thumb:hover {
+  background: #f9a3a3;
+}
+/* 
+#curriculum-container::-webkit-scrollbar-track {
+  background: #bc1e1e;
+  border-radius: 10px;
+} */
