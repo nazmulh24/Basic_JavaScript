@@ -85,4 +85,3 @@ async function showMealDetails(id) {
 
   mealDetails.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-
