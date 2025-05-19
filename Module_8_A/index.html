@@ -49,29 +49,38 @@
   </head>
 
   <body>
-    <!-- Search Bar -->
-    <div class="container text-center">
-      <div class="search-bar">
-        <input
-          type="text"
-          id="searchInput"
-          class="form-control custom-input"
-          placeholder="Find your favorite food..."
-        />
-        <button id="searchBtn" class="btn custom-btn" type="button">
-          <em>Search</em>
-        </button>
+     <!-- Search Bar -->
+    <div class="container text-center my-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-6 d-flex gap-2">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Find your favorite food..."
+          />
+          <button id="searchBtn" class="btn btn-primary" type="button">
+            <em>Search</em>
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Main Layout -->
     <div class="container mt-4">
       <div class="row">
-        <div class="col-md-9">
-          <div id="cardContainer" class="row row-cols-3 g-4"></div>
+        <!-- Cards Container -->
+        <div class="col-12 col-lg-9">
+          <div
+            id="cardContainer"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"
+          >
+            <!-- Cards will be dynamically inserted here -->
+          </div>
         </div>
 
-        <div class="col-md-3 mt-4 mt-md-0">
+        <!-- Cart Section -->
+        <div class="col-12 col-lg-3 mt-4 mt-lg-0">
           <div class="card border-0 bg-transparent">
             <div class="card-body">
               <p
@@ -79,10 +88,10 @@
                 id="cartHeader"
               >
                 Total Cart :
-                <span class="" id="counter">0</span>
+                <span id="counter">0</span>
               </p>
               <div
-                class="px-3 text-secondary fw-semibold small row border-bottom pb-1"
+                class="row border-bottom pb-1 text-secondary fw-semibold small px-3"
               >
                 <div class="col-2">Sl</div>
                 <div class="col-4">Img</div>
